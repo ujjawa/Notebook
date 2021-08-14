@@ -1,0 +1,36 @@
+body{
+   background-image: url("ppp.jpg");
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center center;
+}
+.navb{
+    background-color: rgba(114, 5, 78, 0);
+}
+.ind a{
+    display:block;
+    border-left:6px solid green;
+    padding-left:10px;
+    text-decoration-line: none;
+}
+.ind a:hover h3{
+    color:green;
+}
+.jj{
+    max-width:600px;
+}
+.det{
+    position: relative;
+    background-color: rgba(163, 17, 119, 0.363);
+    box-shadow: 6px 6px 4px rgba(27, 27, 27, 0.534);
+    border-radius: 1%;
+}
+.del{
+    position: absolute;
+    top:12px;
+    right:12px;
+}
+.del i:hover{
+    color:red;
+    cursor: pointer;
+}
