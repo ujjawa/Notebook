@@ -39,9 +39,27 @@ const deletefun=(req,res)=>{
     console.log(err);
     });
 }
+const updatefun=(req,res)=>{
+    const id=req.params.id;
+     //console.log(req.body);
+    mode.updateOne({_id:id},req.body)
+    .then((r)=>{
+     mode.findOne({_id:id}).then((re)=>{
+        //res.send(re);
+        res.redirect("/");
+     })
+     .catch((err)=>{
+        console.log(err)
+    })
+    })
+    .catch((err)=>{
+    console.log(err)}
+    );
+}
 module.exports={
     indexf,
     saveinput,
     detailfun,
-    deletefun
+    deletefun,
+    updatefun
 };

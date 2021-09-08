@@ -8,7 +8,7 @@ const content=new sch({
     snippet:{type:String,
              required:true
     }, 
-    body:{type:String,
+    content:{type:String,
           required:true
     }
 },{timestamps:true});

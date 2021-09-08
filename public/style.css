@@ -34,3 +34,13 @@ body{
     color:red;
     cursor: pointer;
 }
+.upd{
+    position: absolute;
+    top:12px;
+    right:100px;
+    color: white;
+}
+.upd i:hover{
+    color:rgb(51, 255, 0);
+    cursor: pointer;
+}
